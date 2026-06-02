@@ -1,62 +1,76 @@
-# Inventory Logging System for Big Wig Electronics
-# This program logs multiple inventory items and marks large orders (> R500)
+Here’s the same topic restructured as a newspaper article – written for a general audience, with a headline, byline, dateline, and balanced reporting.
 
-def log_inventory_entry():
-    """Function to log a single inventory entry"""
-    
-    # Get user input for product details
-    product_name = input("Enter product name: ")
-    quantity = int(input("Enter quantity received: "))
-    supplier = input("Enter supplier name: ")
-    cost_per_unit = float(input("Enter cost per unit (R): "))
-    
-    # Calculate total cost
-    total_cost = quantity * cost_per_unit
-    
-    # Format total cost to 2 decimal places
-    total_cost_formatted = f"{total_cost:.2f}"
-    
-    # Check if it's a large order (over R500)
-    large_order_note = " (Large Order)" if total_cost > 500 else ""
-    
-    # Create the log entry
-    log_entry = f"Product: {product_name}, Quantity: {quantity}, Supplier: {supplier}, Total Cost: R{total_cost_formatted}{large_order_note}"
-    
-    # Display the entry
-    print("\n" + "-" * 50)
-    print("INVENTORY LOG ENTRY:")
-    print(log_entry)
-    print("-" * 50)
-    
-    # Save to file
-    with open("inventory_log.txt", "a") as file:
-        file.write(log_entry + "\n")
-    
-    print("\n✓ Entry has been saved to inventory_log.txt")
-    
-    # Display binary representation of total cost
-    binary_total = bin(int(total_cost))
-    print(f"Binary representation of total cost: {binary_total}")
-    
-    return True
+---
 
-def main():
-    print("=" * 50)
-    print("BIG WIG ELECTRONICS - INVENTORY LOGGING SYSTEM")
-    print("=" * 50)
-    
-    while True:
-        print("\n--- New Inventory Entry ---")
-        log_inventory_entry()
-        
-        # Ask if user wants to add another entry
-        another = input("\nAdd another entry? (y/n): ").lower()
-        if another != 'y':
-            break
-    
-    print("\n" + "=" * 50)
-    print("Thank you for using the Inventory Logging System!")
-    print("=" * 50)
+THE DAILY DISPATCH
 
-if __name__ == "__main__":
-    main()
+Tech & Economy | Monday, 2 June 2026
+
+---
+
+Robots to the Rescue? Automation Eyed to Fix SA’s Skills Crisis – But at What Cost?
+
+By Sipho Dlamini
+Technology Correspondent
+
+JOHANNESBURG – For years, South African industries have cried out for more engineers, coders, electricians and artisans. Now, a growing number of tech experts are proposing an unconventional solution: robots.
+
+But while automation promises to fill critical gaps where skilled workers are scarce, unions and labour watchdogs warn of a darker side – widespread job losses in a country already battling a 32% unemployment rate.
+
+‘We don’t have enough people’
+
+The skills shortage is no longer a future threat. Mines in Limpopo cannot find enough geological surveyors. Hospitals in the Eastern Cape lack surgical specialists. Warehouses in Gauteng scramble for certified forklift drivers.
+
+“We simply don’t have enough skilled bodies to keep the economy moving,” says Thabo Nkosi, an industrial automation consultant based in Midrand. “Robotics won’t replace people – because those people aren’t there in the first place.”
+
+In several sectors, companies are already testing this logic.
+
+At a Sibanye-Stillwater mine, drones now map rock faces autonomously – a task that once required a full team of surveyors. Toyota’s Durban plant uses collaborative welding robots (“cobots”) after struggling to recruit certified welders for two years. Online retailer Takealot recently deployed automated sortation robots in its Johannesburg fulfilment centre, citing a chronic shortage of logistics planners.
+
+Early results show productivity per existing skilled worker jumping between 20% and 40%, according to internal industry reports.
+
+‘A robot won’t strike – or learn’
+
+Supporters argue that the right kind of robotics can augment rather than replace. Cobots, for example, can be taught by hand, allowing semi-skilled operators to redeploy them without expensive programmers. Remote surgical robots let a Johannesburg specialist operate on a patient in Mthatha.
+
+“It’s not robot versus human,” says Dr. Lerato Mbeki, a researcher at the University of Pretoria’s Centre for Automation Ethics. “It’s about stretching every skilled person further. One engineer watches ten robots instead of turning one wrench.”
+
+For employers, there is another quiet advantage: robots do not resign, strike, or demand annual wage increases.
+
+‘Who will train the next generation?’
+
+But the mood on the factory floor is far less optimistic.
+
+Outside a packaging plant in Springs where automated palletisers were introduced last year, former machine tender David Ngobeni holds a faded ID card. “I worked there twelve years,” he says. “Now they need one technician to press buttons. The other twenty of us? Gone.”
+
+Trade unions, including NUMSA and AMCU, have taken notice. While not opposing automation outright, they are demanding legally binding “1-for-1” clauses: for every robot deployed, an employer must fund one worker’s reskilling into a higher-value role.
+
+“We are not Luddites,” says NUMSA spokesperson Refiloe Makhanya. “But if a robot replaces a junior technician, where will that junior learn to become a senior? You will have robots with no one left who understands them.”
+
+The reskilling gap
+
+The government’s Department of Science and Innovation (DSI) has quietly begun piloting robotics literacy programmes in TVET colleges. Yet critics say the scale is far too small.
+
+“We need hundreds of thousands of people trained in robot maintenance, repair, and supervision,” says Mbeki. “Right now, we are training a few hundred. That is a recipe for social disaster.”
+
+Two possible futures
+
+Analysts describe two scenarios.
+
+In the optimistic version, cobots and autonomous systems fill vacant roles, raise productivity, and free up skilled South Africans for creative, supervisory, and community-facing work. Unemployment falls as new technical jobs emerge.
+
+In the pessimistic version, companies pursue cheap, full automation – replacing three low-skilled workers for every one new technician hired. The skills shortage becomes an excuse for mass displacement, and inequality widens further.
+
+“The technology is not the decision-maker,” says Nkosi. “We are. If we plan badly, robotics will hurt. If we plan well, it could save industries that are already limping.”
+
+What happens next
+
+A national automation summit is scheduled for August in Cape Town, hosted by the Manufacturing Circle and the Department of Employment and Labour. Unions, tech firms and government will attempt to draft a Robotics and Reskilling Charter.
+
+For now, the robots are coming – not with a bang, but with a quiet, steady rollout. The question is whether South Africa will control the switch, or simply watch from the sidelines.
+
+— ENDS —
+
+---
+
+Did you find this article useful? If you need a shorter version (e.g., for a newsletter or school newspaper layout) or a specific publication style (e.g., Mail & Guardian or Sowetan tone), just let me know.
